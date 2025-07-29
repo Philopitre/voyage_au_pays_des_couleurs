@@ -65,7 +65,7 @@ body {
   background: #fef7ed;
 }
 
-/* Mobile menu toggle - EXACTEMENT COMME DANS LE TEST QUI MARCHE */
+/* Mobile menu toggle */
 .mobile-menu-toggle {
   background: #ea580c;
   border: none;
@@ -134,9 +134,17 @@ header::before {
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 h1 {
@@ -612,24 +620,20 @@ footer p {
   font-size: 0.95em;
 }
 
-/* Mobile responsiveness - EXACTEMENT COMME DANS LE TEST QUI MARCHE */
+/* Navigation responsive */
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
   }
-  
-  /* FORCER L'AFFICHAGE DU BOUTON */
+
+  /* MONTRER le menu burger sur mobile */
   .mobile-menu-toggle {
     display: flex !important;
   }
-  
-  /* Cacher le menu desktop */
+
+  /* CACHER le menu horizontal sur mobile */
   .nav-menu {
-    display: none;
-  }
-  
-  .nav-menu.active {
-    display: flex;
+    display: none !important;
     position: fixed;
     top: 70px;
     left: 0;
@@ -644,13 +648,18 @@ footer p {
     box-shadow: 0 4px 20px rgba(249, 115, 22, 0.1);
     z-index: 1000;
   }
-  
-  .nav-menu.active li {
+
+  /* MONTRER le menu quand actif */
+  .nav-menu.active {
+    display: flex !important;
+  }
+
+  .nav-menu li {
     width: 100%;
     text-align: center;
   }
-  
-  .nav-menu.active .nav-link {
+
+  .nav-menu .nav-link {
     display: block;
     width: 90%;
     margin: 0 auto;
@@ -658,119 +667,118 @@ footer p {
     font-size: 1.1em;
     border-radius: 10px;
   }
-  
-  /* Responsive adjustments */
+
   .logo a {
     font-size: 1.5em;
   }
-  
+
   h1 {
     font-size: 2.5em;
   }
-  
+
   .intro-section h2 {
     font-size: 2em;
   }
-  
+
   .participation-section h2 {
     font-size: 2em;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .audio-timeline {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .info-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .audio-section {
     padding: 30px 15px;
   }
-  
+
   .participation-section {
     padding: 30px 15px;
   }
-  
+
   .main-content {
     padding: 40px 0;
   }
-  
+
   header {
     padding: 40px 0;
   }
-  
+
   .calendar-section {
     padding: 30px 15px;
   }
-  
+
   .next-session {
     flex-direction: column;
     gap: 30px;
     text-align: center;
   }
-  
+
   .session-date {
     min-width: auto;
     width: 100%;
     max-width: 250px;
     margin: 0 auto;
   }
-  
+
   .session-details {
     justify-content: center;
   }
-  
+
   .blog-header {
     padding: 30px 20px;
   }
-  
+
   .blog-header h1 {
     font-size: 1.8em;
   }
-  
+
   .blog-content {
     padding: 25px 15px;
   }
-  
+
   .blog-content h2 {
     font-size: 1.5em;
   }
-  
+
   .blog-content h3 {
     font-size: 1.3em;
   }
-  
+
   .contact-methods {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-section {
     padding: 30px 15px;
   }
-  
+
   .feature-card {
     padding: 30px 20px;
   }
-  
+
   .feature-icon {
     width: 60px;
     height: 60px;
     font-size: 1.5em;
   }
-  
+
   .timeline-item {
     padding: 20px 15px;
   }
-  
+
   .info-card {
     padding: 20px 15px;
   }
@@ -780,31 +788,31 @@ footer p {
   .logo a {
     font-size: 1.3em;
   }
-  
+
   h1 {
     font-size: 2em;
   }
-  
+
   .intro-section h2 {
     font-size: 1.7em;
   }
-  
+
   .feature-card {
     padding: 25px 15px;
   }
-  
+
   .session-date .day {
     font-size: 3em;
   }
-  
+
   .blog-header h1 {
     font-size: 1.6em;
   }
-  
+
   .blog-content {
     padding: 20px 15px;
   }
-  
+
   .detail-item {
     font-size: 0.85em;
     padding: 6px 12px;
