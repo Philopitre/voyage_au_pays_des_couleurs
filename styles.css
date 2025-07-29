@@ -65,25 +65,24 @@ body {
   background: #fef7ed;
 }
 
-/* Mobile menu toggle */
+/* Mobile menu toggle - EXACTEMENT COMME DANS LE TEST QUI MARCHE */
 .mobile-menu-toggle {
   background: #ea580c;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
   flex-direction: column;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   display: none;
   z-index: 1001;
-  position: relative;
 }
 
 .mobile-menu-toggle span {
-  width: 18px;
+  width: 20px;
   height: 2px;
   background: white;
   margin: 2px 0;
@@ -613,18 +612,18 @@ footer p {
   font-size: 0.95em;
 }
 
-/* Mobile responsiveness */
+/* Mobile responsiveness - EXACTEMENT COMME DANS LE TEST QUI MARCHE */
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
   }
   
-  /* Force display of mobile menu toggle */
+  /* FORCER L'AFFICHAGE DU BOUTON */
   .mobile-menu-toggle {
     display: flex !important;
   }
   
-  /* Hide desktop menu, transform to mobile */
+  /* Cacher le menu desktop */
   .nav-menu {
     display: none;
   }
@@ -637,7 +636,7 @@ footer p {
     width: 100%;
     height: calc(100vh - 70px);
     background: white;
-    flex-direction: column !important;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
@@ -649,7 +648,6 @@ footer p {
   .nav-menu.active li {
     width: 100%;
     text-align: center;
-    margin-bottom: 0;
   }
   
   .nav-menu.active .nav-link {
@@ -661,7 +659,7 @@ footer p {
     border-radius: 10px;
   }
   
-  /* Header adjustments */
+  /* Responsive adjustments */
   .logo a {
     font-size: 1.5em;
   }
@@ -678,7 +676,6 @@ footer p {
     font-size: 2em;
   }
   
-  /* Grid adjustments */
   .features-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -694,7 +691,6 @@ footer p {
     gap: 20px;
   }
   
-  /* Section padding adjustments */
   .audio-section {
     padding: 30px 15px;
   }
@@ -732,7 +728,6 @@ footer p {
     justify-content: center;
   }
   
-  /* Blog responsive */
   .blog-header {
     padding: 30px 20px;
   }
@@ -753,7 +748,6 @@ footer p {
     font-size: 1.3em;
   }
   
-  /* Contact responsive */
   .contact-methods {
     flex-direction: column;
     align-items: center;
@@ -763,7 +757,6 @@ footer p {
     padding: 30px 15px;
   }
   
-  /* Feature cards responsive */
   .feature-card {
     padding: 30px 20px;
   }
@@ -774,12 +767,10 @@ footer p {
     font-size: 1.5em;
   }
   
-  /* Timeline responsive */
   .timeline-item {
     padding: 20px 15px;
   }
   
-  /* Info cards responsive */
   .info-card {
     padding: 20px 15px;
   }
@@ -796,18 +787,6 @@ footer p {
   
   .intro-section h2 {
     font-size: 1.7em;
-  }
-  
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .audio-timeline {
-    grid-template-columns: 1fr;
-  }
-  
-  .info-grid {
-    grid-template-columns: 1fr;
   }
   
   .feature-card {
