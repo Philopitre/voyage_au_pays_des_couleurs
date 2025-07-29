@@ -15,7 +15,12 @@
         <div class="logo">
           <a href="#home">Philow</a>
         </div>
-        <ul class="nav-menu">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
           <li><a href="#home" class="nav-link active">Accueil</a></li>
           <li><a href="#blog" class="nav-link">Blog</a></li>
           <li><a href="#sessions" class="nav-link">Sessions</a></li>
@@ -90,7 +95,7 @@
             <p>Chaque session dure une heure complète, avec des capsules audio de 5 à 10 minutes.</p>
           </div>
           <div class="info-card">
-            <h3>Animateur</h3>
+            <h3>Animatrice</h3>
             <p>Philow, maître reiki expérimentée, guide chaque session avec bienveillance.</p>
           </div>
           <div class="info-card">
@@ -422,84 +427,7 @@
     </div>
   </footer>
 
-  <script>
-    // Navigation functionality
-    document.addEventListener('DOMContentLoaded', function () {
-      const navLinks = document.querySelectorAll('.nav-link');
-      const sections = document.querySelectorAll('.content-section');
-
-      navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-
-          // Remove active class from all links and sections
-          navLinks.forEach(navLink => navLink.classList.remove('active'));
-          sections.forEach(section => section.classList.remove('active'));
-
-          // Add active class to clicked link
-          this.classList.add('active');
-
-          // Show corresponding section
-          const targetId = this.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-          if (targetSection) {
-            targetSection.classList.add('active');
-          }
-
-          // Smooth scroll to top
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      });
-
-      // Tooltip functionality for citation links
-      const citationLinks = document.querySelectorAll('.citation-link');
-      citationLinks.forEach(link => {
-        link.addEventListener('mouseenter', function () {
-          const citation = this.getAttribute('data-citation');
-          if (citation) {
-            // Create tooltip element
-            const tooltip = document.createElement('div');
-            tooltip.className = 'citation-tooltip';
-            tooltip.textContent = citation;
-            tooltip.style.cssText = `
-              position: absolute;
-              background: #333;
-              color: white;
-              padding: 8px 12px;
-              border-radius: 6px;
-              font-size: 0.9em;
-              max-width: 300px;
-              z-index: 1000;
-              box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-              pointer-events: none;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-            `;
-
-            document.body.appendChild(tooltip);
-
-            // Position tooltip
-            const rect = this.getBoundingClientRect();
-            tooltip.style.left = rect.left + 'px';
-            tooltip.style.top = (rect.bottom + 8) + 'px';
-
-            // Fade in
-            setTimeout(() => tooltip.style.opacity = '1', 10);
-
-            // Store reference
-            this._tooltip = tooltip;
-          }
-        });
-
-        link.addEventListener('mouseleave', function () {
-          if (this._tooltip) {
-            this._tooltip.remove();
-            this._tooltip = null;
-          }
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
