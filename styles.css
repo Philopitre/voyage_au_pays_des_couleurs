@@ -18,6 +18,62 @@ body {
   padding: 0 20px;
 }
 
+/* Navigation */
+.main-nav {
+  background: white;
+  box-shadow: 0 2px 10px rgba(249, 115, 22, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo a {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #ea580c;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ea580c;
+  background: #fef7ed;
+}
+
+/* Content sections */
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* Header */
 header {
   background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   color: white;
@@ -68,6 +124,7 @@ h1 {
   z-index: 1;
 }
 
+/* Main content */
 .main-content {
   padding: 80px 0;
 }
@@ -92,6 +149,7 @@ h1 {
   line-height: 1.8;
 }
 
+/* Features grid */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -138,6 +196,7 @@ h1 {
   line-height: 1.6;
 }
 
+/* Audio section */
 .audio-section {
   background: white;
   padding: 60px 40px;
@@ -181,6 +240,7 @@ h1 {
   line-height: 1.5;
 }
 
+/* Calendar section */
 .calendar-section {
   background: white;
   padding: 60px 40px;
@@ -269,6 +329,7 @@ h1 {
   border: 1px solid rgba(249, 115, 22, 0.2);
 }
 
+/* Participation section */
 .participation-section {
   background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   color: white;
@@ -291,25 +352,7 @@ h1 {
   line-height: 1.6;
 }
 
-.cta-button {
-  display: inline-block;
-  background: white;
-  color: #ea580c;
-  padding: 18px 40px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1em;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  background: #fef7ed;
-}
-
+/* Info grid */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -337,6 +380,194 @@ h1 {
   line-height: 1.5;
 }
 
+/* Blog styles */
+.blog-post {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(249, 115, 22, 0.08);
+  overflow: hidden;
+}
+
+.blog-header {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.blog-header h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.blog-meta {
+  font-size: 1.2em;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.blog-content {
+  padding: 50px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.blog-intro {
+  font-size: 1.1em;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fef7ed;
+  border-left: 4px solid #f97316;
+  border-radius: 10px;
+}
+
+.blog-content h2 {
+  color: #ea580c;
+  font-size: 1.8em;
+  margin: 40px 0 20px 0;
+  font-weight: 400;
+}
+
+.blog-content h3 {
+  color: #ea580c;
+  font-size: 1.4em;
+  margin: 30px 0 15px 0;
+  font-weight: 500;
+}
+
+.blog-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.citation-link {
+  color: #ea580c;
+  text-decoration: none;
+  border-bottom: 1px dotted #ea580c;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.citation-link:hover {
+  background: #fef7ed;
+  border-bottom: 1px solid #ea580c;
+  text-decoration: none;
+}
+
+.citation-link::after {
+  content: "🔗";
+  font-size: 0.8em;
+  margin-left: 3px;
+  opacity: 0.6;
+}
+
+.blog-list {
+  margin: 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.blog-list li {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background: #fef7ed;
+  border-left: 3px solid #f97316;
+  border-radius: 5px;
+  position: relative;
+}
+
+.blog-list li::before {
+  content: "•";
+  color: #ea580c;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.blog-conclusion {
+  margin-top: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #fef7ed 0%, #fff8f0 100%);
+  border-radius: 15px;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.blog-conclusion h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Contact section */
+.contact-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #ea580c;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.contact-content p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-item {
+  background: #fef7ed;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #f97316;
+  max-width: 300px;
+}
+
+.contact-item h3 {
+  color: #ea580c;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.contact-item p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.contact-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
 footer {
   background: #333;
   color: white;
@@ -350,9 +581,19 @@ footer p {
   font-size: 0.95em;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.9em;
   }
 
   h1 {
@@ -386,6 +627,18 @@ footer p {
     padding: 40px 20px;
   }
 
+  .participation-section {
+    padding: 40px 20px;
+  }
+
+  .main-content {
+    padding: 40px 0;
+  }
+
+  header {
+    padding: 40px 0;
+  }
+
   .calendar-section {
     padding: 40px 20px;
   }
@@ -407,16 +660,21 @@ footer p {
     justify-content: center;
   }
 
-  .participation-section {
-    padding: 40px 20px;
+  .blog-header {
+    padding: 40px 30px;
   }
 
-  .main-content {
-    padding: 40px 0;
+  .blog-header h1 {
+    font-size: 2em;
   }
 
-  header {
-    padding: 40px 0;
+  .blog-content {
+    padding: 30px 25px;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
