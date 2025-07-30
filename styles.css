@@ -152,6 +152,18 @@ h1 {
   font-weight: 300;
   position: relative;
   z-index: 1;
+  margin-bottom: 15px;
+}
+
+.slogan {
+  font-size: 1.4em;
+  opacity: 0.95;
+  font-weight: 400;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  margin-top: 15px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Main content */
@@ -810,6 +822,10 @@ footer p {
 
   h1 {
     font-size: 2.5em;
+  }
+
+  .slogan {
+    font-size: 1.1em;
   }
 
   .intro-section h2 {
