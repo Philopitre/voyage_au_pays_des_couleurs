@@ -103,15 +103,6 @@ body {
   transform: rotate(45deg) translate(-3px, -4px);
 }
 
-/* Content sections */
-.content-section {
-  display: none;
-}
-
-.content-section.active {
-  display: block;
-}
-
 /* Header */
 header {
   background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
@@ -186,6 +177,30 @@ h1 {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
 }
 
 /* Features grid */
@@ -389,6 +404,127 @@ h1 {
   margin-bottom: 35px;
   opacity: 0.95;
   line-height: 1.6;
+}
+
+/* Session details section */
+.session-details-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 25px;
+  margin-bottom: 80px;
+  box-shadow: 0 15px 35px rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.session-details-section h2 {
+  color: #ea580c;
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fef7ed;
+  border-radius: 15px;
+  border-left: 4px solid #f97316;
+  position: relative;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 auto 20px;
+}
+
+.step h3 {
+  color: #ea580c;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.step p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Calendar upcoming */
+.calendar-upcoming {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 25px;
+  margin-bottom: 80px;
+  box-shadow: 0 15px 35px rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.calendar-upcoming h2 {
+  color: #ea580c;
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.upcoming-sessions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.session-card {
+  background: #fef7ed;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border-left: 4px solid #f97316;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.session-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.15);
+}
+
+.session-moon {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.session-card h3 {
+  color: #ea580c;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.session-date-text {
+  color: #f97316;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.session-card p {
+  color: #666;
+  line-height: 1.5;
 }
 
 /* Info grid */
@@ -699,11 +835,29 @@ footer p {
     gap: 20px;
   }
 
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .upcoming-sessions {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .audio-section {
     padding: 30px 15px;
   }
 
   .participation-section {
+    padding: 30px 15px;
+  }
+
+  .session-details-section {
+    padding: 30px 15px;
+  }
+
+  .calendar-upcoming {
     padding: 30px 15px;
   }
 
@@ -782,6 +936,14 @@ footer p {
   .info-card {
     padding: 20px 15px;
   }
+
+  .step {
+    padding: 25px 15px;
+  }
+
+  .session-card {
+    padding: 25px 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -816,5 +978,15 @@ footer p {
   .detail-item {
     font-size: 0.85em;
     padding: 6px 12px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+  .session-moon {
+    font-size: 2.5em;
   }
 }
