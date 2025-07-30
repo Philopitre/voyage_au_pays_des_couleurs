@@ -1,7 +1,5 @@
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('.content-section');
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const navMenu = document.getElementById('navMenu');
 
@@ -27,40 +25,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }); // Debug
   });
 
-  // Navigation links functionality
-  navLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      // Remove active class from all links and sections
-      navLinks.forEach(navLink => navLink.classList.remove('active'));
-      sections.forEach(section => section.classList.remove('active'));
-
-      // Add active class to clicked link
-      this.classList.add('active');
-
-      // Show corresponding section
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-      if (targetSection) {
-        targetSection.classList.add('active');
-      }
-
-      // Close mobile menu if open
-      mobileMenuToggle.classList.remove('active');
-      navMenu.classList.remove('active');
-
-      // Smooth scroll to top
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  });
-
   // Close mobile menu when clicking outside
   document.addEventListener('click', function (e) {
     if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
       mobileMenuToggle.classList.remove('active');
       navMenu.classList.remove('active');
     }
+  });
+
+  // Close mobile menu when clicking on a nav link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      mobileMenuToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
   });
 
   // Tooltip functionality for citation links
