@@ -45,7 +45,7 @@
         <p class="intro-text">
           Rejoignez notre projet expérimental de soins énergétiques gratuits. Deux fois par mois,
           à chaque nouvelle et pleine lune, connectons-nous ensemble dans un cercle d'énergie partagée.
-          Guidés par Philow, maître reiki, nous explorons un voyage méditatif d'une heure
+          Guidé par Philow, maître reiki, nous explorons un voyage méditatif d'une heure
           rythmé par les cycles lunaires naturels.
         </p>
       </div>
@@ -91,15 +91,34 @@
 
       <section class="audio-section">
         <h2>Écouter la Méditation</h2>
-        <p style="text-align: center; margin-bottom: 20px; color: #666; font-size: 1.1em;">
-          Découvrez un exemple de méditation guidée "Voyage avec les couleurs"
-        </p>
-        <div style="text-align: center;">
-          <a href="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-nouvelle-lune-24-07-2025-377426/"
-            target="_blank"
-            style="display: inline-block; background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 500; transition: transform 0.3s ease;">
-            🎧 Écouter le Podcast
-          </a>
+        <div class="podcast-content">
+          <!-- Dernier épisode en avant -->
+          <div class="current-episode">
+            <h3>🌕 Dernière Session - Pleine Lune</h3>
+            <p class="episode-date">9 août 2025</p>
+            <p class="episode-title">Voyage avec les couleurs - Pleine Lune</p>
+            <div style="text-align: center; margin-top: 20px;">
+              <a href="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-pleine-lune-09-08-2025-378927/"
+                target="_blank" class="podcast-link">
+                🎧 Écouter le dernier épisode
+              </a>
+            </div>
+          </div>
+
+          <!-- Episodes précédents -->
+          <div class="previous-episodes">
+            <h4>Épisodes précédents</h4>
+            <select id="previousEpisodes" class="episode-selector">
+              <option value="">Sélectionner un épisode...</option>
+              <option
+                value="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-nouvelle-lune-24-07-2025-377426/">
+                🌑 24 juillet 2025 - Voyage avec les couleurs (Nouvelle Lune)
+              </option>
+            </select>
+            <button id="listenPrevious" class="podcast-link secondary" style="margin-top: 15px; display: none;">
+              🎧 Écouter cet épisode
+            </button>
+          </div>
         </div>
       </section>
 
