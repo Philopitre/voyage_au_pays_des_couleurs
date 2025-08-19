@@ -262,7 +262,7 @@ h1 {
   line-height: 1.6;
 }
 
-/* Audio section */
+/* Audio/Podcast section */
 .audio-section {
   background: white;
   padding: 60px 40px;
@@ -278,6 +278,101 @@ h1 {
   text-align: center;
   margin-bottom: 40px;
   font-weight: 300;
+}
+
+.podcast-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.current-episode {
+  background: linear-gradient(135deg, #fef7ed 0%, #fff8f0 100%);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 2px solid rgba(249, 115, 22, 0.2);
+}
+
+.current-episode h3 {
+  color: #ea580c;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.episode-date {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.episode-title {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.podcast-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.podcast-link:hover {
+  transform: translateY(-2px);
+}
+
+.podcast-link.secondary {
+  background: linear-gradient(135deg, #666, #555);
+  padding: 12px 25px;
+  font-size: 0.95em;
+}
+
+.previous-episodes {
+  text-align: center;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 15px;
+}
+
+.previous-episodes h4 {
+  color: #ea580c;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.episode-selector {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: 2px solid rgba(249, 115, 22, 0.3);
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.episode-selector:focus {
+  outline: none;
+  border-color: #ea580c;
+}
+
+.episode-selector option {
+  padding: 10px;
 }
 
 .audio-timeline {
@@ -959,6 +1054,22 @@ footer p {
 
   .session-card {
     padding: 25px 15px;
+  }
+
+  .podcast-content {
+    padding: 0 10px;
+  }
+
+  .current-episode {
+    padding: 20px 15px;
+  }
+
+  .previous-episodes {
+    padding: 20px 15px;
+  }
+
+  .episode-selector {
+    font-size: 0.9em;
   }
 }
 
