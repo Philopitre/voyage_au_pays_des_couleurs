@@ -36,16 +36,16 @@
         <h2>Prochaine Session</h2>
         <div class="next-session">
           <div class="session-date">
-            <div class="month">Août</div>
-            <div class="day">9</div>
+            <div class="month">Aout</div>
+            <div class="day">23</div>
             <div class="year">2025</div>
           </div>
           <div class="session-info">
             <h3>Nouvelle Lune</h3>
             <p>Rejoignez-nous pour notre prochaine session de soins énergétiques. Une heure de connexion collective
-              guidée par Philow.</p>
+              guidé par Philow. Début du soin énergétique 22H00</p>
             <div class="session-details">
-              <span class="detail-item">🌙 Cycle : Nouvelle Lune</span>
+              <span class="detail-item">🌑 Cycle : Nouvelle Lune</span>
               <span class="detail-item">⏰ Durée : 1 heure</span>
               <span class="detail-item">🎵 Audio inclus</span>
             </div>
@@ -67,15 +67,34 @@
 
       <section class="audio-section">
         <h2>Écouter la Méditation</h2>
-        <p style="text-align: center; margin-bottom: 20px; color: #666; font-size: 1.1em;">
-          Découvrez un exemple de méditation guidée "Voyage avec les couleurs"
-        </p>
-        <div style="text-align: center;">
-          <a href="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-nouvelle-lune-24-07-2025-377426/"
-            target="_blank"
-            style="display: inline-block; background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 500; transition: transform 0.3s ease;">
-            🎧 Écouter le Podcast
-          </a>
+        <div class="podcast-content">
+          <!-- Dernier épisode en avant -->
+          <div class="current-episode">
+            <h3>🌕 Dernière Session - Pleine Lune</h3>
+            <p class="episode-date">9 août 2025</p>
+            <p class="episode-title">Voyage avec les couleurs - Pleine Lune</p>
+            <div style="text-align: center; margin-top: 20px;">
+              <a href="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-pleine-lune-09-08-2025-378927/"
+                target="_blank" class="podcast-link">
+                🎧 Écouter le dernier épisode
+              </a>
+            </div>
+          </div>
+
+          <!-- Episodes précédents -->
+          <div class="previous-episodes">
+            <h4>Épisodes précédents</h4>
+            <select id="previousEpisodes" class="episode-selector">
+              <option value="">Sélectionner un épisode...</option>
+              <option
+                value="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-nouvelle-lune-24-07-2025-377426/">
+                🌑 24 juillet 2025 - Voyage avec les couleurs (Nouvelle Lune)
+              </option>
+            </select>
+            <button id="listenPrevious" class="podcast-link secondary" style="margin-top: 15px; display: none;">
+              🎧 Écouter cet épisode
+            </button>
+          </div>
         </div>
       </section>
 
@@ -110,20 +129,20 @@
         <div class="upcoming-sessions">
           <div class="session-card">
             <div class="session-moon">🌑</div>
-            <h3>Nouvelle Lune d'Août</h3>
-            <p class="session-date-text">9 Août 2025</p>
+            <h3>Nouvelle Lune de Septembre</h3>
+            <p class="session-date-text">3 Septembre 2025</p>
             <p>Session de renouveau et d'intentions nouvelles</p>
           </div>
           <div class="session-card">
             <div class="session-moon">🌕</div>
-            <h3>Pleine Lune d'Août</h3>
-            <p class="session-date-text">25 Août 2025</p>
+            <h3>Pleine Lune de Septembre</h3>
+            <p class="session-date-text">18 Septembre 2025</p>
             <p>Session de libération et de gratitude</p>
           </div>
           <div class="session-card">
             <div class="session-moon">🌑</div>
-            <h3>Nouvelle Lune de Septembre</h3>
-            <p class="session-date-text">7 Septembre 2025</p>
+            <h3>Nouvelle Lune d'Octobre</h3>
+            <p class="session-date-text">2 Octobre 2025</p>
             <p>Session de renouveau et d'intentions nouvelles</p>
           </div>
         </div>
