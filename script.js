@@ -33,6 +33,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Podcast episode selector functionality
+  const episodeSelector = document.getElementById('previousEpisodes');
+  const listenButton = document.getElementById('listenPrevious');
+  
+  if (episodeSelector && listenButton) {
+    episodeSelector.addEventListener('change', function() {
+      const selectedUrl = this.value;
+      if (selectedUrl) {
+        listenButton.style.display = 'inline-block';
+        listenButton.onclick = function() {
+          window.open(selectedUrl, '_blank');
+        };
+      } else {
+        listenButton.style.display = 'none';
+      }
+    });
+  }
+
   // Close mobile menu when clicking on a nav link
   const navLinks = document.querySelectorAll('.nav-link');
   navLinks.forEach(link => {
