@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Philow - Soins Énergétiques Lunaires</title>
+  <title>Blog - Philow</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="preload" href="assets/css/main.css" as="style">
-  <meta name="description"
-    content="Rejoignez nos sessions de soins énergétiques gratuits synchronisées avec les cycles lunaires. Guidé par Philow, maître reiki.">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <meta name="description" content="Explorations et réflexions sur les soins énergétiques par Philow. Articles sur le Reiki, les soins à distance et le bien-être.">
 </head>
 
 <body>
@@ -24,8 +23,8 @@
           <span></span>
         </button>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link active">Accueil</a></li>
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
           <li><a href="sessions.html" class="nav-link">Sessions</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -33,430 +32,187 @@
     </div>
   </nav>
 
-  <header>
-    <div class="container">
-      <h1>Philow</h1>
-      <p class="subtitle">Soins Énergétiques Lunaires</p>
-      <p class="slogan">Et si nous apportions des solutions imaginaires à des maux réels</p>
-    </div>
-  </header>
-
   <main class="main-content">
     <div class="container">
-      <div class="intro-section">
-        <h2>Un Cercle de Connexion</h2>
-        <p class="intro-text">
-          Rejoignez notre projet expérimental de soins énergétiques gratuits. Deux fois par mois,
-          à chaque nouvelle et pleine lune, connectons-nous ensemble dans un cercle d'énergie partagée.
-          Guidé par Philow, maître reiki, nous explorons un voyage méditatif d'une heure
-          rythmé par les cycles lunaires naturels.
-        </p>
+      <header class="blog-main-header">
+        <h1>Blog Philow</h1>
+        <p class="blog-subtitle">Explorations et réflexions sur les soins énergétiques</p>
+      </header>
+
+      <div class="blog-grid">
+        <!-- Article 1 - Nouveau -->
+        <article class="blog-card" data-article="soin-energetique-distance">
+          <div class="blog-card-image">
+            <div class="blog-card-icon">🌟</div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">Août 2025</span>
+            <h3 class="blog-card-title">La caresse d'une énergie lointaine</h3>
+            <p class="blog-card-excerpt">Pourquoi participer à un soin énergétique à distance ? Découvrez comment
+              l'énergie circule au-delà des frontières physiques et les bienfaits que vous pouvez en retirer.</p>
+            <div class="blog-card-tags">
+              <span class="tag">Soins à distance</span>
+              <span class="tag">Énergie</span>
+              <span class="tag">Bien-être</span>
+            </div>
+          </div>
+          <div class="blog-card-overlay">
+            <div class="blog-card-overlay-content">
+              <h4>La caresse d'une énergie lointaine</h4>
+              <p>Imaginez une vague de chaleur bienveillante qui vous atteint, même à des centaines de kilomètres. Un
+                voyage intérieur accessible à tous, sans contrainte géographique, pour retrouver paix et vitalité.</p>
+              <button class="read-more-btn" onclick="showArticleDebug('soin-energetique-distance')">Lire l'article</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 - Existant -->
+        <article class="blog-card" data-article="reiki-distance-presentiel">
+          <div class="blog-card-image">
+            <div class="blog-card-icon">🤲</div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">Juillet 2025</span>
+            <h3 class="blog-card-title">Reiki à distance vs Reiki en présentiel</h3>
+            <p class="blog-card-excerpt">Une exploration complète des deux modalités de soins énergétiques. Témoignages,
+              avantages et conseils pour choisir la méthode qui vous convient.</p>
+            <div class="blog-card-tags">
+              <span class="tag">Reiki</span>
+              <span class="tag">Comparaison</span>
+              <span class="tag">Témoignages</span>
+            </div>
+          </div>
+          <div class="blog-card-overlay">
+            <div class="blog-card-overlay-content">
+              <h4>Reiki à distance vs Reiki en présentiel</h4>
+              <p>Découvrez les témoignages de patients et praticiens, les avantages de chaque méthode, et dans quels
+                contextes privilégier l'une ou l'autre approche.</p>
+              <button class="read-more-btn" onclick="showArticleDebug('reiki-distance-presentiel')">Lire l'article</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder pour futurs articles -->
+        <article class="blog-card coming-soon">
+          <div class="blog-card-image">
+            <div class="blog-card-icon">📖</div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">Prochainement</span>
+            <h3 class="blog-card-title">Prochain article en préparation</h3>
+            <p class="blog-card-excerpt">De nouveaux articles paraîtront régulièrement pour approfondir vos
+              connaissances sur les soins énergétiques et leur pratique.</p>
+            <div class="blog-card-tags">
+              <span class="tag">À venir</span>
+            </div>
+          </div>
+        </article>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🌙</div>
-          <h3>Cycles Lunaires</h3>
-          <p>Sessions synchronisées avec les nouvelles et pleines lunes, 2 fois par mois pour suivre les énergies
-            naturelles.</p>
-        </div>
+      <!-- Articles complets (cachés par défaut) -->
+      <div id="article-soin-energetique-distance" class="full-article hidden">
+        <button class="back-to-blog" onclick="showBlogGridDebug()">← Retour au blog</button>
+        <article class="blog-post">
+          <header class="blog-header">
+            <h1>La caresse d'une énergie lointaine</h1>
+            <p class="blog-meta">Pourquoi participer à un soin énergétique à distance ?</p>
+          </header>
 
-        <div class="feature-card">
-          <div class="feature-icon">⭕</div>
-          <h3>Le Cercle</h3>
-          <p>Un groupe connecté de participants partageant ensemble cette expérience énergétique collective.</p>
-        </div>
+          <div class="blog-content">
+            <p class="blog-intro">
+              L'énergie circule comme un souffle invisible reliant tous les êtres, au-delà des frontières physiques.
+            </p>
 
-        <div class="feature-card">
-          <div class="feature-icon">🎵</div>
-          <h3>Voyage Sonore</h3>
-          <p>Méditation guidée de 5-10 minutes avec un voyage de couleurs pour accompagner votre expérience.</p>
-        </div>
+            <p>
+              Imaginez une vague de chaleur bienveillante qui vous atteint, même à des centaines de kilomètres. Un soin
+              énergétique à distance, tel le Reiki ou d'autres soins vibratoires, est semblable à une brise de lumière
+              qui voyage jusqu'à vous. Dans le calme de votre foyer, vous fermez les yeux et ressentez une présence
+              douce et apaisante. Ce voyage intérieur commence là où vous êtes, sans effort, comme une main tendue à 
+              votre âme qui invite au lâcher-prise.
+            </p>
+
+            <h2>Pourquoi faire appel à un soin énergétique à distance ?</h2>
+
+            <p>
+              Faire appel à un soin énergétique à distance, c'est d'abord réaliser que la distance n'a pas de prise sur
+              l'énergie. En effet,
+              <a href="https://www.ghislaine-fouville.fr/soin-energetique/" target="_blank" class="citation-link"
+                data-citation="rien ne nous sépare véritablement – nous sommes tous reliés sur le plan subtil">
+                rien ne nous sépare véritablement – nous sommes tous reliés sur le plan subtil
+              </a>.
+              <a href="https://www.ghislaine-fouville.fr/soin-energetique/" target="_blank" class="citation-link"
+                data-citation="L'énergie dépasse les barrières physiques que nous percevons">
+                L'énergie dépasse les barrières physiques que nous percevons
+              </a>, un peu à la manière des ondes radio ou du Wi-Fi capables de traverser l'espace.
+            </p>
+
+            <div class="blog-conclusion">
+              <h2>Conclusion : un voyage intérieur ouvert à tous</h2>
+              <p>
+                Se laisser traverser par l'énergie, c'est comme emprunter un chemin vers son propre cœur.
+              </p>
+              <p>
+                En définitive, participer à un soin énergétique à distance, c'est s'offrir une parenthèse enchantée dans
+                le tumulte de la vie moderne. On y embarque comme pour un voyage intérieur, guidé par une force
+                bienveillante qui dépasse les kilomètres. Au fil du soin, la distance s'évanouit et il ne reste qu'un
+                lien d'énergie pure entre vous et le praticien, un fil lumineux sur lequel voyagent l'apaisement, la
+                vitalité et la clarté.
+              </p>
+              <p>
+                Que votre chemin soit lumineux, où que vous soyez.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
 
-      <section class="audio-section">
-        <h2>Votre Accompagnement Audio</h2>
-        <div class="audio-timeline">
-          <div class="timeline-item">
-            <h4>Avant la Session</h4>
-            <p>Écoutez la méditation guidée pour vous préparer et atteindre l'état optimal de réception.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Pendant la Session</h4>
-            <p>Utilisez l'audio pour rejoindre le cercle si vous êtes interrompu ou arrivez en cours.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Après la Session</h4>
-            <p>Reconnectez-vous à l'énergie nourrie par le cercle grâce à cette méditation.</p>
-          </div>
-        </div>
-      </section>
+      <div id="article-reiki-distance-presentiel" class="full-article hidden">
+        <button class="back-to-blog" onclick="showBlogGridDebug()">← Retour au blog</button>
+        <article class="blog-post">
+          <header class="blog-header">
+            <h1>Reiki à distance vs Reiki en présentiel</h1>
+            <p class="blog-meta">Une exploration complète des deux modalités de soins énergétiques</p>
+          </header>
 
-      <section class="audio-section">
-        <h2>Écouter la Méditation</h2>
-        <div class="podcast-content">
-          <!-- Dernier épisode en avant -->
-          <div class="current-episode">
-            <h3>🌕 Dernière Session - Pleine Lune</h3>
-            <p class="episode-date">9 août 2025</p>
-            <p class="episode-title">Voyage avec les couleurs - Pleine Lune</p>
-            <div style="text-align: center; margin-top: 20px;">
-              <a href="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-pleine-lune-09-08-2025-378927/"
-                target="_blank" class="podcast-link" rel="noopener">
-                🎧 Écouter le dernier épisode
-              </a>
+          <div class="blog-content">
+            <p class="blog-intro">
+              Le Reiki peut se pratiquer de deux manières : en présentiel (praticien et receveur dans la même pièce,
+              avec imposition directe des mains) ou à distance (le praticien envoie l'énergie sans contact physique,
+              éventuellement à des kilomètres du receveur). Nous allons examiner comment ces deux modes se comparent en
+              termes d'efficacité perçue, relayer des témoignages de patients et praticiens, présenter les
+              avantages/inconvénients de chaque méthode, et identifier dans quels contextes l'une peut être recommandée
+              plutôt que l'autre.
+            </p>
+
+            <h2>Efficacité perçue des soins Reiki à distance</h2>
+
+            <p>
+              De nombreux praticiens affirment que le Reiki à distance est tout aussi efficace qu'une séance en
+              face-à-face. En effet, pour une séance de Reiki à distance,
+              <a href="https://jessica-terapias.com/le-reiki-a-distance-ou-en-presentiel/" target="_blank"
+                class="citation-link" data-citation="« le résultat ne change pas de la séance donnée en présence »">
+                « le résultat ne change pas de la séance donnée en présence »
+              </a>.
+              Dans la pratique énergétique, on considère que l'énergie universelle n'est pas limitée par l'espace :
+              <a href="https://opetitsoin.com/reiki-a-distance/" target="_blank" class="citation-link"
+                data-citation="« En énergétique il n'y a pas de notion de temps ni d'espace... L'efficacité est la même qu'en présentiel »">
+                « En énergétique il n'y a pas de notion de temps ni d'espace... L'efficacité est la même qu'en
+                présentiel »
+              </a>.
+            </p>
+
+            <div class="blog-conclusion">
+              <h2>Conclusion</h2>
+              <p>
+                Reiki en présentiel et à distance poursuivent le même objectif de bien-être et d'harmonisation
+                énergétique, avec une efficacité perçue comme équivalente par la majorité des pratiquants et
+                bénéficiaires. Le choix entre les deux dépendra surtout des besoins pratiques (disponibilité,
+                localisation, état de santé) et des préférences personnelles de chacun.
+              </p>
             </div>
           </div>
-
-          <!-- Episodes précédents -->
-          <div class="previous-episodes">
-            <h4>Épisodes précédents</h4>
-            <select id="previousEpisodes" class="episode-selector">
-              <option value="">Sélectionner un épisode...</option>
-              <option
-                value="https://www.podcastics.com/podcast/episode/voyage-avec-les-couleurs-nouvelle-lune-24-07-2025-377426/">
-                🌑 24 juillet 2025 - Voyage avec les couleurs (Nouvelle Lune)
-              </option>
-            </select>
-            <button id="listenPrevious" class="podcast-link secondary" style="margin-top: 15px; display: none;">
-              🎧 Écouter cet épisode
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>Durée</h3>
-          <p>Chaque session dure une heure complète, avec des capsules audio de 5 à 10 minutes.</p>
-        </div>
-        <div class="info-card">
-          <h3>Animateur</h3>
-          <p>Philow, maître reiki expérimenté, guide chaque session avec bienveillance.</p>
-        </div>
-        <div class="info-card">
-          <h3>Gratuit</h3>
-          <p>Ce projet expérimental est entièrement gratuit, offert avec générosité.</p>
-        </div>
-        <div class="info-card">
-          <h3>Horaires</h3>
-          <p>Consultez les événements sur notre page Facebook pour connaître les horaires de chaque session.</p>
-        </div>
+        </article>
       </div>
-
-      <div class="cta-section">
-        <a href="sessions.html" class="cta-button">Découvrir les Sessions</a>
-      </div><!DOCTYPE html>
-      <html lang="fr">
-      
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog - Philow</title>
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/blog.css">
-        <meta name="description"
-          content="Explorations et réflexions sur les soins énergétiques par Philow. Articles sur le Reiki, les soins à distance et le bien-être.">
-      </head>
-      
-      <body>
-        <nav class="main-nav">
-          <div class="container">
-            <div class="nav-content">
-              <div class="logo">
-                <a href="index.html">Philow</a>
-              </div>
-              <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu mobile">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                <li><a href="sessions.html" class="nav-link">Sessions</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      
-        <main class="main-content">
-          <div class="container">
-            <header class="blog-main-header">
-              <h1>Blog Philow</h1>
-              <p class="blog-subtitle">Explorations et réflexions sur les soins énergétiques</p>
-            </header>
-      
-            <div class="blog-grid">
-              <!-- Article 1 - Nouveau -->
-              <article class="blog-card" data-article="soin-energetique-distance">
-                <div class="blog-card-image">
-                  <div class="blog-card-icon">🌟</div>
-                </div>
-                <div class="blog-card-content">
-                  <span class="blog-card-date">Août 2025</span>
-                  <h3 class="blog-card-title">La caresse d'une énergie lointaine</h3>
-                  <p class="blog-card-excerpt">Pourquoi participer à un soin énergétique à distance ? Découvrez comment
-                    l'énergie circule au-delà des frontières physiques et les bienfaits que vous pouvez en retirer.</p>
-                  <div class="blog-card-tags">
-                    <span class="tag">Soins à distance</span>
-                    <span class="tag">Énergie</span>
-                    <span class="tag">Bien-être</span>
-                  </div>
-                </div>
-                <div class="blog-card-overlay">
-                  <div class="blog-card-overlay-content">
-                    <h4>La caresse d'une énergie lointaine</h4>
-                    <p>Imaginez une vague de chaleur bienveillante qui vous atteint, même à des centaines de kilomètres. Un
-                      voyage intérieur accessible à tous, sans contrainte géographique, pour retrouver paix et vitalité.</p>
-                    <button class="read-more-btn" onclick="showArticleDebug('soin-energetique-distance')">Lire
-                      l'article</button>
-                  </div>
-                </div>
-              </article>
-      
-              <!-- Article 2 - Existant -->
-              <article class="blog-card" data-article="reiki-distance-presentiel">
-                <div class="blog-card-image">
-                  <div class="blog-card-icon">🤲</div>
-                </div>
-                <div class="blog-card-content">
-                  <span class="blog-card-date">Juillet 2025</span>
-                  <h3 class="blog-card-title">Reiki à distance vs Reiki en présentiel</h3>
-                  <p class="blog-card-excerpt">Une exploration complète des deux modalités de soins énergétiques. Témoignages,
-                    avantages et conseils pour choisir la méthode qui vous convient.</p>
-                  <div class="blog-card-tags">
-                    <span class="tag">Reiki</span>
-                    <span class="tag">Comparaison</span>
-                    <span class="tag">Témoignages</span>
-                  </div>
-                </div>
-                <div class="blog-card-overlay">
-                  <div class="blog-card-overlay-content">
-                    <h4>Reiki à distance vs Reiki en présentiel</h4>
-                    <p>Découvrez les témoignages de patients et praticiens, les avantages de chaque méthode, et dans quels
-                      contextes privilégier l'une ou l'autre approche.</p>
-                    <button class="read-more-btn" onclick="showArticleDebug('reiki-distance-presentiel')">Lire
-                      l'article</button>
-                  </div>
-                </div>
-              </article>
-      
-              <!-- Placeholder pour futurs articles -->
-              <article class="blog-card coming-soon">
-                <div class="blog-card-image">
-                  <div class="blog-card-icon">📖</div>
-                </div>
-                <div class="blog-card-content">
-                  <span class="blog-card-date">Prochainement</span>
-                  <h3 class="blog-card-title">Prochain article en préparation</h3>
-                  <p class="blog-card-excerpt">De nouveaux articles paraîtront régulièrement pour approfondir vos
-                    connaissances sur les soins énergétiques et leur pratique.</p>
-                  <div class="blog-card-tags">
-                    <span class="tag">À venir</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-      
-            <!-- Articles complets (cachés par défaut) -->
-            <div id="article-soin-energetique-distance" class="full-article hidden">
-              <button class="back-to-blog" onclick="showBlogGridDebug()">← Retour au blog</button>
-              <article class="blog-post">
-                <header class="blog-header">
-                  <h1>La caresse d'une énergie lointaine</h1>
-                  <p class="blog-meta">Pourquoi participer à un soin énergétique à distance ?</p>
-                </header>
-      
-                <div class="blog-content">
-                  <p class="blog-intro">
-                    L'énergie circule comme un souffle invisible reliant tous les êtres, au-delà des frontières physiques.
-                  </p>
-      
-                  <p>
-                    Imaginez une vague de chaleur bienveillante qui vous atteint, même à des centaines de kilomètres. Un soin
-                    énergétique à distance, tel le Reiki ou d'autres soins vibratoires, est semblable à une brise de lumière
-                    qui voyage jusqu'à vous. Dans le calme de votre foyer, vous fermez les yeux et ressentez une présence
-                    douce et apaisante. Ce voyage intérieur commence là où vous êtes, sans effort, comme une main tendue à
-                    votre âme qui invite au lâcher-prise.
-                  </p>
-      
-                  <h2>Pourquoi faire appel à un soin énergétique à distance ?</h2>
-      
-                  <p>
-                    Faire appel à un soin énergétique à distance, c'est d'abord réaliser que la distance n'a pas de prise sur
-                    l'énergie. En effet,
-                    <a href="https://www.ghislaine-fouville.fr/soin-energetique/" target="_blank" class="citation-link"
-                      data-citation="rien ne nous sépare véritablement – nous sommes tous reliés sur le plan subtil">
-                      rien ne nous sépare véritablement – nous sommes tous reliés sur le plan subtil
-                    </a>.
-                    <a href="https://www.ghislaine-fouville.fr/soin-energetique/" target="_blank" class="citation-link"
-                      data-citation="L'énergie dépasse les barrières physiques que nous percevons">
-                      L'énergie dépasse les barrières physiques que nous percevons
-                    </a>, un peu à la manière des ondes radio ou du Wi-Fi capables de traverser l'espace.
-                  </p>
-      
-                  <div class="blog-conclusion">
-                    <h2>Conclusion : un voyage intérieur ouvert à tous</h2>
-                    <p>
-                      Se laisser traverser par l'énergie, c'est comme emprunter un chemin vers son propre cœur.
-                    </p>
-                    <p>
-                      En définitive, participer à un soin énergétique à distance, c'est s'offrir une parenthèse enchantée dans
-                      le tumulte de la vie moderne. On y embarque comme pour un voyage intérieur, guidé par une force
-                      bienveillante qui dépasse les kilomètres. Au fil du soin, la distance s'évanouit et il ne reste qu'un
-                      lien d'énergie pure entre vous et le praticien, un fil lumineux sur lequel voyagent l'apaisement, la
-                      vitalité et la clarté.
-                    </p>
-                    <p>
-                      Que votre chemin soit lumineux, où que vous soyez.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-      
-            <div id="article-reiki-distance-presentiel" class="full-article hidden">
-              <button class="back-to-blog" onclick="showBlogGridDebug()">← Retour au blog</button>
-              <article class="blog-post">
-                <header class="blog-header">
-                  <h1>Reiki à distance vs Reiki en présentiel</h1>
-                  <p class="blog-meta">Une exploration complète des deux modalités de soins énergétiques</p>
-                </header>
-      
-                <div class="blog-content">
-                  <p class="blog-intro">
-                    Le Reiki peut se pratiquer de deux manières : en présentiel (praticien et receveur dans la même pièce,
-                    avec imposition directe des mains) ou à distance (le praticien envoie l'énergie sans contact physique,
-                    éventuellement à des kilomètres du receveur). Nous allons examiner comment ces deux modes se comparent en
-                    termes d'efficacité perçue, relayer des témoignages de patients et praticiens, présenter les
-                    avantages/inconvénients de chaque méthode, et identifier dans quels contextes l'une peut être recommandée
-                    plutôt que l'autre.
-                  </p>
-      
-                  <h2>Efficacité perçue des soins Reiki à distance</h2>
-      
-                  <p>
-                    De nombreux praticiens affirment que le Reiki à distance est tout aussi efficace qu'une séance en
-                    face-à-face. En effet, pour une séance de Reiki à distance,
-                    <a href="https://jessica-terapias.com/le-reiki-a-distance-ou-en-presentiel/" target="_blank"
-                      class="citation-link" data-citation="« le résultat ne change pas de la séance donnée en présence »">
-                      « le résultat ne change pas de la séance donnée en présence »
-                    </a>.
-                    Dans la pratique énergétique, on considère que l'énergie universelle n'est pas limitée par l'espace :
-                    <a href="https://opetitsoin.com/reiki-a-distance/" target="_blank" class="citation-link"
-                      data-citation="« En énergétique il n'y a pas de notion de temps ni d'espace... L'efficacité est la même qu'en présentiel »">
-                      « En énergétique il n'y a pas de notion de temps ni d'espace... L'efficacité est la même qu'en
-                      présentiel »
-                    </a>.
-                  </p>
-      
-                  <div class="blog-conclusion">
-                    <h2>Conclusion</h2>
-                    <p>
-                      Reiki en présentiel et à distance poursuivent le même objectif de bien-être et d'harmonisation
-                      énergétique, avec une efficacité perçue comme équivalente par la majorité des pratiquants et
-                      bénéficiaires. Le choix entre les deux dépendra surtout des besoins pratiques (disponibilité,
-                      localisation, état de santé) et des préférences personnelles de chacun.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </main>
-      
-        <footer>
-          <div class="container">
-            <p>&copy; 2025 Philow - Soins Énergétiques Lunaires</p>
-          </div>
-        </footer>
-      
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/blog.js"></script>
-      
-        <!-- Fonctions de debug temporaires -->
-        <script>
-          function showArticleDebug(articleId) {
-            console.log('🚀 showArticleDebug appelée avec:', articleId);
-
-            // Masquer la grille
-            const blogGrid = document.querySelector('.blog-grid');
-            const blogHeader = document.querySelector('.blog-main-header');
-
-            if (blogGrid) blogGrid.style.display = 'none';
-            if (blogHeader) blogHeader.style.display = 'none';
-
-            // Masquer tous les articles
-            document.querySelectorAll('.full-article').forEach(article => {
-              article.classList.add('hidden');
-            });
-
-            // Afficher l'article ciblé
-            const targetArticle = document.getElementById(`article-${articleId}`);
-            console.log('🎯 Article ciblé:', targetArticle);
-
-            if (targetArticle) {
-              targetArticle.classList.remove('hidden');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              console.log('✅ Article affiché');
-
-              // Mettre à jour l'URL
-              const url = new URL(window.location);
-              url.searchParams.set('article', articleId);
-              window.history.pushState({}, '', url);
-            } else {
-              console.error('❌ Article non trouvé:', `article-${articleId}`);
-            }
-          }
-
-          function showBlogGridDebug() {
-            console.log('🚀 showBlogGridDebug appelée');
-
-            // Afficher la grille
-            const blogGrid = document.querySelector('.blog-grid');
-            const blogHeader = document.querySelector('.blog-main-header');
-
-            if (blogGrid) blogGrid.style.display = '';
-            if (blogHeader) blogHeader.style.display = '';
-
-            // Masquer tous les articles
-            document.querySelectorAll('.full-article').forEach(article => {
-              article.classList.add('hidden');
-            });
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            // Mettre à jour l'URL
-            const url = new URL(window.location);
-            url.searchParams.delete('article');
-            window.history.pushState({}, '', url);
-
-            console.log('✅ Grille blog affichée');
-          }
-
-          // Gérer la navigation par URL
-          function handleUrlNavigation() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const articleParam = urlParams.get('article');
-
-            if (articleParam) {
-              showArticleDebug(articleParam);
-            } else {
-              showBlogGridDebug();
-            }
-          }
-
-          // Gérer le bouton retour du navigateur
-          window.addEventListener('popstate', handleUrlNavigation);
-
-          // Gérer le chargement initial
-          document.addEventListener('DOMContentLoaded', handleUrlNavigation);
-        </script>
-      </body>
-      
-      </html>
     </div>
   </main>
 
@@ -467,6 +223,86 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog.js"></script>
+  
+  <!-- Fonctions de debug temporaires -->
+  <script>
+    function showArticleDebug(articleId) {
+      console.log('🚀 showArticleDebug appelée avec:', articleId);
+      
+      // Masquer la grille
+      const blogGrid = document.querySelector('.blog-grid');
+      const blogHeader = document.querySelector('.blog-main-header');
+      
+      if (blogGrid) blogGrid.style.display = 'none';
+      if (blogHeader) blogHeader.style.display = 'none';
+      
+      // Masquer tous les articles
+      document.querySelectorAll('.full-article').forEach(article => {
+        article.classList.add('hidden');
+      });
+      
+      // Afficher l'article ciblé
+      const targetArticle = document.getElementById(`article-${articleId}`);
+      console.log('🎯 Article ciblé:', targetArticle);
+      
+      if (targetArticle) {
+        targetArticle.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        console.log('✅ Article affiché');
+        
+        // Mettre à jour l'URL
+        const url = new URL(window.location);
+        url.searchParams.set('article', articleId);
+        window.history.pushState({}, '', url);
+      } else {
+        console.error('❌ Article non trouvé:', `article-${articleId}`);
+      }
+    }
+    
+    function showBlogGridDebug() {
+      console.log('🚀 showBlogGridDebug appelée');
+      
+      // Afficher la grille
+      const blogGrid = document.querySelector('.blog-grid');
+      const blogHeader = document.querySelector('.blog-main-header');
+      
+      if (blogGrid) blogGrid.style.display = '';
+      if (blogHeader) blogHeader.style.display = '';
+      
+      // Masquer tous les articles
+      document.querySelectorAll('.full-article').forEach(article => {
+        article.classList.add('hidden');
+      });
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+      // Mettre à jour l'URL
+      const url = new URL(window.location);
+      url.searchParams.delete('article');
+      window.history.pushState({}, '', url);
+      
+      console.log('✅ Grille blog affichée');
+    }
+    
+    // Gérer la navigation par URL
+    function handleUrlNavigation() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleParam = urlParams.get('article');
+      
+      if (articleParam) {
+        showArticleDebug(articleParam);
+      } else {
+        showBlogGridDebug();
+      }
+    }
+    
+    // Gérer le bouton retour du navigateur
+    window.addEventListener('popstate', handleUrlNavigation);
+    
+    // Gérer le chargement initial
+    document.addEventListener('DOMContentLoaded', handleUrlNavigation);
+  </script>
 </body>
 
 </html>
