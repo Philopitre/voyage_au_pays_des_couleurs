@@ -57,7 +57,9 @@
   border: 1px solid var(--color-shadow);
   position: relative;
   cursor: pointer;
-  height: 400px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-card:hover {
@@ -82,6 +84,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-shrink: 0;
 }
 
 .blog-card.coming-soon .blog-card-image {
@@ -95,9 +98,9 @@
 
 .blog-card-content {
   padding: 25px;
-  height: calc(100% - 120px);
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .blog-card-date {
@@ -125,13 +128,15 @@
   color: var(--color-text-light);
   line-height: 1.6;
   flex: 1;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .blog-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 .tag {
@@ -418,13 +423,7 @@
   }
 
   .blog-card {
-    height: auto;
-    min-height: 350px;
-  }
-
-  .blog-card-content {
-    height: auto;
-    min-height: 230px;
+    min-height: 380px;
   }
 
   .blog-card-overlay-content {
