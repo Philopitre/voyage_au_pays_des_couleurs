@@ -7,7 +7,8 @@
   <title>Blog - Philow</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/blog.css">
-  <meta name="description" content="Explorations et réflexions sur les soins énergétiques par Philow. Articles sur le Reiki, les soins à distance et le bien-être.">
+  <meta name="description"
+    content="Explorations et réflexions sur les soins énergétiques par Philow. Articles sur le Reiki, les soins à distance et le bien-être.">
 </head>
 
 <body>
@@ -40,7 +41,35 @@
       </header>
 
       <div class="blog-grid">
-        <!-- Article 1 - Nouveau -->
+        <!-- Article 1 - NOUVEAU Podcast -->
+        <article class="blog-card" data-article="interview-miss-stick">
+          <div class="blog-card-image">
+            <div class="blog-card-icon">🎙️</div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">Novembre 2025</span>
+            <h3 class="blog-card-title">Philow se confie à Miss Stick</h3>
+            <p class="blog-card-excerpt">Cette fois-ci, pas de long article, mais une conversation authentique. Philow
+              partage ses motivations profondes et dévoile pourquoi il offre gratuitement les voyages au pays des
+              couleurs.</p>
+            <div class="blog-card-tags">
+              <span class="tag">Podcast</span>
+              <span class="tag">Interview</span>
+              <span class="tag">Témoignage</span>
+            </div>
+          </div>
+          <div class="blog-card-overlay">
+            <div class="blog-card-overlay-content">
+              <h4>Philow se confie à Miss Stick</h4>
+              <p>Une conversation intime où Philow partage sa vision du projet, ses inspirations et l'élan qui le pousse
+                à offrir ces voyages méditatifs. Un épisode lumineux entre introspection et inspiration.</p>
+              <button class="read-more-btn" onclick="showArticleDebug('interview-miss-stick')">Découvrir
+                l'interview</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
         <article class="blog-card" data-article="soin-energetique-distance">
           <div class="blog-card-image">
             <div class="blog-card-icon">🌟</div>
@@ -61,12 +90,13 @@
               <h4>La caresse d'une énergie lointaine</h4>
               <p>Imaginez une vague de chaleur bienveillante qui vous atteint, même à des centaines de kilomètres. Un
                 voyage intérieur accessible à tous, sans contrainte géographique, pour retrouver paix et vitalité.</p>
-              <button class="read-more-btn" onclick="showArticleDebug('soin-energetique-distance')">Lire l'article</button>
+              <button class="read-more-btn" onclick="showArticleDebug('soin-energetique-distance')">Lire
+                l'article</button>
             </div>
           </div>
         </article>
 
-        <!-- Article 2 - Existant -->
+        <!-- Article 3 -->
         <article class="blog-card" data-article="reiki-distance-presentiel">
           <div class="blog-card-image">
             <div class="blog-card-icon">🤲</div>
@@ -87,7 +117,8 @@
               <h4>Reiki à distance vs Reiki en présentiel</h4>
               <p>Découvrez les témoignages de patients et praticiens, les avantages de chaque méthode, et dans quels
                 contextes privilégier l'une ou l'autre approche.</p>
-              <button class="read-more-btn" onclick="showArticleDebug('reiki-distance-presentiel')">Lire l'article</button>
+              <button class="read-more-btn" onclick="showArticleDebug('reiki-distance-presentiel')">Lire
+                l'article</button>
             </div>
           </div>
         </article>
@@ -110,6 +141,78 @@
       </div>
 
       <!-- Articles complets (cachés par défaut) -->
+
+      <!-- NOUVEL ARTICLE - Interview Podcast -->
+      <div id="article-interview-miss-stick" class="full-article hidden">
+        <button class="back-to-blog" onclick="showBlogGridDebug()">← Retour au blog</button>
+        <article class="blog-post">
+          <header class="blog-header">
+            <h1>🎙️ Philow se confie à Miss Stick</h1>
+            <p class="blog-meta">Racontez-moi – Hors-série : Positivons !</p>
+          </header>
+
+          <div class="blog-content">
+            <p class="blog-intro">
+              Cette fois-ci, pas de long article écrit, mais une conversation authentique et spontanée.
+            </p>
+
+            <p>
+              Dans cet épisode un peu spécial du podcast Brikabrac, Philow a choisi de se confier à Miss Stick, qui
+              endosse le rôle d'intervieweuse. Plutôt que de rédiger un énième article, il a préféré partager de vive
+              voix ses motivations profondes, son cheminement personnel, et les raisons qui l'ont poussé à offrir
+              gratuitement les voyages au pays des couleurs.
+            </p>
+
+            <h2>Une invitation à se reconnecter</h2>
+
+            <p>
+              Au fil de l'échange, Philow nous parle de son projet <em>Voyage au pays des couleurs</em>, une invitation
+              à se reconnecter à soi, à la créativité et à la douceur du moment présent. Il évoque également son livre
+              de développement personnel, <strong>Laissons fleurir nos rêves</strong>, une œuvre qui mêle poésie,
+              réflexion et élan vital. 🌸
+            </p>
+
+            <h2>Pourquoi offrir ces voyages gratuitement ?</h2>
+
+            <p>
+              Dans cette conversation intime, Philow dévoile ce qui l'anime vraiment : le désir de partager, de créer
+              des espaces de douceur et de connexion accessibles à tous, sans barrière financière. Il explique comment
+              les cycles lunaires rythment ces sessions collectives, et pourquoi il croit profondément en la force du
+              cercle et de l'énergie partagée.
+            </p>
+
+            <p>
+              C'est un épisode lumineux, entre introspection et inspiration, où l'on découvre l'homme derrière le
+              praticien, ses rêves, ses convictions, et sa vision d'un monde où chacun peut accéder à des moments de
+              paix et de ressourcement.
+            </p>
+
+            <div class="blog-conclusion">
+              <h2>Écouter l'interview complète</h2>
+              <p>
+                Pour découvrir l'univers de Philow et comprendre toute la profondeur de son engagement, nous vous
+                invitons à écouter cet échange authentique avec Miss Stick.
+              </p>
+              <p style="text-align: center; margin-top: 30px;">
+                <a href="https://www.podcastics.com/podcast/episode/voyage-au-pays-des-couleurs-philow-se-confie-a-miss-stick-390285/?s=4501"
+                  target="_blank" class="citation-link"
+                  style="font-size: 1.2em; padding: 15px 30px; background: rgba(255,255,255,0.1); border-radius: 8px; display: inline-block;">
+                  🎧 Écouter l'interview sur Podcastics
+                </a>
+              </p>
+              <p style="margin-top: 30px; opacity: 0.9;">
+                Vous pouvez également explorer plus en profondeur l'univers du voyage au pays des couleurs via le site
+                dédié :
+                <a href="https://philopitre.github.io/voyage_au_pays_des_couleurs/" target="_blank"
+                  class="citation-link">
+                  Voyage au pays des couleurs
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
       <div id="article-soin-energetique-distance" class="full-article hidden">
         <button class="back-to-blog" onclick="showBlogGridDebug()">← Retour au blog</button>
         <article class="blog-post">
@@ -127,7 +230,7 @@
               Imaginez une vague de chaleur bienveillante qui vous atteint, même à des centaines de kilomètres. Un soin
               énergétique à distance, tel le Reiki ou d'autres soins vibratoires, est semblable à une brise de lumière
               qui voyage jusqu'à vous. Dans le calme de votre foyer, vous fermez les yeux et ressentez une présence
-              douce et apaisante. Ce voyage intérieur commence là où vous êtes, sans effort, comme une main tendue à 
+              douce et apaisante. Ce voyage intérieur commence là où vous êtes, sans effort, comme une main tendue à
               votre âme qui invite au lâcher-prise.
             </p>
 
@@ -224,33 +327,33 @@
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/blog.js"></script>
-  
+
   <!-- Fonctions de debug temporaires -->
   <script>
     function showArticleDebug(articleId) {
       console.log('🚀 showArticleDebug appelée avec:', articleId);
-      
+
       // Masquer la grille
       const blogGrid = document.querySelector('.blog-grid');
       const blogHeader = document.querySelector('.blog-main-header');
-      
+
       if (blogGrid) blogGrid.style.display = 'none';
       if (blogHeader) blogHeader.style.display = 'none';
-      
+
       // Masquer tous les articles
       document.querySelectorAll('.full-article').forEach(article => {
         article.classList.add('hidden');
       });
-      
+
       // Afficher l'article ciblé
       const targetArticle = document.getElementById(`article-${articleId}`);
       console.log('🎯 Article ciblé:', targetArticle);
-      
+
       if (targetArticle) {
         targetArticle.classList.remove('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
         console.log('✅ Article affiché');
-        
+
         // Mettre à jour l'URL
         const url = new URL(window.location);
         url.searchParams.set('article', articleId);
@@ -259,47 +362,47 @@
         console.error('❌ Article non trouvé:', `article-${articleId}`);
       }
     }
-    
+
     function showBlogGridDebug() {
       console.log('🚀 showBlogGridDebug appelée');
-      
+
       // Afficher la grille
       const blogGrid = document.querySelector('.blog-grid');
       const blogHeader = document.querySelector('.blog-main-header');
-      
+
       if (blogGrid) blogGrid.style.display = '';
       if (blogHeader) blogHeader.style.display = '';
-      
+
       // Masquer tous les articles
       document.querySelectorAll('.full-article').forEach(article => {
         article.classList.add('hidden');
       });
-      
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      
+
       // Mettre à jour l'URL
       const url = new URL(window.location);
       url.searchParams.delete('article');
       window.history.pushState({}, '', url);
-      
+
       console.log('✅ Grille blog affichée');
     }
-    
+
     // Gérer la navigation par URL
     function handleUrlNavigation() {
       const urlParams = new URLSearchParams(window.location.search);
       const articleParam = urlParams.get('article');
-      
+
       if (articleParam) {
         showArticleDebug(articleParam);
       } else {
         showBlogGridDebug();
       }
     }
-    
+
     // Gérer le bouton retour du navigateur
     window.addEventListener('popstate', handleUrlNavigation);
-    
+
     // Gérer le chargement initial
     document.addEventListener('DOMContentLoaded', handleUrlNavigation);
   </script>
